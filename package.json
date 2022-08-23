@@ -1,0 +1,33 @@
+{
+  "name": "cloud-build-notifier-to-teams",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.18.0",
+    "@google-cloud/secret-manager": "^4.0.0",
+    "axios": "^0.27.2"
+  },
+  "descriptors": "Google Cloud Buildでの実行結果をMicrosoft Teamsへ通知する",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/japan-systems/cloud-build-notifier-to-teams.git"
+  },
+  "keywords": [
+    "Cloud Build",
+    "Cloud Functions",
+    "Cloud Pub/Sub",
+    "Secret Manager",
+    "Teams",
+    "Notification"
+  ],
+  "author": "Toshiya SAITOH <stoshiya@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/japan-systems/cloud-build-notifier-to-teams/issues"
+  },
+  "homepage": "https://github.com/japan-systems/cloud-build-notifier-to-teams#readme"
+}
