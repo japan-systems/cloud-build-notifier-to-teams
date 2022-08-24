@@ -14,7 +14,7 @@ exports.notify = (event, context) => {
   }
   const data = JSON.parse(Buffer.from(event.data, 'base64').toString())
 
-  if (data.source.repoSource && (data.status === 'SUCCESS' || data.status === 'FAILURE')) {
+  if (data.source && data.source.repoSource && (data.status === 'SUCCESS' || data.status === 'FAILURE')) {
     (async () => {
       const [secret] = await client.accessSecretVersion({
         name: `projects/${data.projectId}/secrets/${process.env.SECRET_NAME}/versions/latest`
