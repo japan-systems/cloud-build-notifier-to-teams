@@ -24,7 +24,8 @@ exports.notify = (event, context) => {
       axios.post(url, {
         title: '&#x1F528; Test and Build Result',
         text: `&#x1F6A8; **STATUS**: ${data.status} ${data.status === 'SUCCESS' ? '&#x1F389;' : '&#x1F621;'}  \n` +
-          `&#x1F517; [BUILD DETAIL](${data.logUrl})`
+          `&#x1F517; [BUILD DETAIL](${data.logUrl})`,
+        themeColor: `${data.status === 'SUCCESS' ? '28a745' : 'dc3545'}`
       }).catch((error) => {
         console.error(error);
       });
