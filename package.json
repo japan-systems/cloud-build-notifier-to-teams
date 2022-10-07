@@ -2,13 +2,12 @@
   "name": "cloud-build-notifier-to-teams",
   "version": "0.0.1",
   "dependencies": {
-    "@google-cloud/pubsub": "^0.18.0",
+    "@google-cloud/pubsub": "^3.2.0",
     "@google-cloud/secret-manager": "^4.0.0",
     "axios": "^0.27.2"
   },
   "descriptors": "Google Cloud Buildでの実行結果をMicrosoft Teamsへ通知する",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
